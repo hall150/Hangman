@@ -1,0 +1,61 @@
+body {
+    background: greenyellow;
+}
+
+h1, h2, h3 {
+    color: white;
+}
+
+#header {
+    border: white dotted;
+    text-align: center;
+    height: 150px;
+    width: 600px;
+    text-align: center;
+    margin: 5px auto;
+}
+
+#score {
+    border: white dotted;
+    font-size: 20px;
+    text-align: center;
+    height: 40px;
+    width: 600px;
+    text-align: center;
+    margin: 5px auto;
+}
+
+.underscore {
+    color: white;
+    border: white dotted;
+    font-family: 'Jua', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    height: 80px;
+    width: 80%;
+    text-align: center;
+    margin: 5px auto;
+    letter-spacing: 10px;
+}
+.rightGuess {
+    color: white;
+    border: white dotted;
+    font-size: 18px;
+    text-align: center;
+    height: 100px;
+    width: 45%;
+    text-align: center;
+    margin: 5px auto;
+    letter-spacing: 10px;
+}
+.wrongGuess {
+    color: white;
+    border: white dotted;
+    font-size: 18px;
+    text-align: center;
+    height: 100px;
+    width: 45%;
+    text-align: center;
+    margin: 5px auto;
+    letter-spacing: 10px;
+}

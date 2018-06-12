@@ -1,8 +1,4 @@
-// Array of words 
-var oddWord = ['test']
-
-// Choose words radomly
-
+var oddWord = ['cat', 'dog', 'hamster','fish', 'pig', 'monkey', 'turtle']
 var underScore = [];
 var rightGuess = [];
 var wrongGuess = [];
@@ -15,7 +11,6 @@ var randNum = Math.floor(Math.random() * oddWord.length);
 var randWord = oddWord[randNum];
     randWord = randWord.toLowerCase();
     
-// Dom mani - replace whats in each repsective div
 
 var docUnderScore = document.getElementsByClassName('underscore');
 var docrightGuess = document.getElementsByClassName('rightGuess');
@@ -35,11 +30,11 @@ var blankUnderscore = () => {
 console.log(blankUnderscore());
 
 document.addEventListener('keypress', (event) => {
-    //convert  and make fillable
       
         var keyWord = String.fromCharCode(event.keyCode);
-
+ 
 if(randWord.indexOf(keyWord) > -1) {
+   // for (var i = -1; (i = randWord.indexOf(keyWord), i + 1), != -1, i++);
     
             rightGuess.push(keyWord);
     
@@ -73,7 +68,7 @@ if(randWord.indexOf(keyWord) > -1) {
 
 
     
-
+//THIS CODE ONLY WORKS WITH WORDS WITH NO REPEATING LETTERS... BELOW IS THE ATTEMPT TO CYCLE THE LOOP. THE PROBLEM IS THE INDEXOF ONLY CALLING THE FIRST INSTANCE OF THE LETTER
 // if(randWord.indexOf(keyWord) > -1) {
 
 //     // If right push to right array
